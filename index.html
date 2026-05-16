@@ -3,22 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Klinik Digital Kakao</title>
 
 <style>
+
 body{
     margin:0;
-    font-family:Arial;
-    background:#f4f7f5;
-    text-align:center;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to bottom,#eaf7ee,#f7faf8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
 
 .container{
-    padding:30px 20px;
+    width:90%;
+    max-width:420px;
+    text-align:center;
 }
 
 .logo{
-    font-size:28px;
+    font-size:32px;
     font-weight:bold;
     color:#1f7a4d;
     margin-bottom:10px;
@@ -26,24 +33,30 @@ body{
 
 .subtitle{
     color:#666;
-    margin-bottom:40px;
+    margin-bottom:35px;
+    font-size:15px;
 }
 
 .menu{
     display:flex;
     flex-direction:column;
-    gap:20px;
+    gap:18px;
 }
 
 .button{
     background:white;
-    padding:25px;
-    border-radius:20px;
+    padding:22px;
+    border-radius:22px;
     text-decoration:none;
     color:#222;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    box-shadow:0 5px 14px rgba(0,0,0,0.08);
+    transition:0.2s;
+}
+
+.button:hover{
+    transform:translateY(-3px);
 }
 
 .laporan{
@@ -54,9 +67,24 @@ body{
     border-left:8px solid #ffc107;
 }
 
+.tutorial{
+    border-left:8px solid #007bff;
+}
+
 .darurat{
     border-left:8px solid #dc3545;
 }
+
+.saran{
+    border-left:8px solid #6f42c1;
+}
+
+.footer{
+    margin-top:30px;
+    font-size:12px;
+    color:#888;
+}
+
 </style>
 </head>
 
@@ -69,23 +97,35 @@ body{
 </div>
 
 <div class="subtitle">
-Sistem Monitoring & Informasi Petani
+Sistem Monitoring & Informasi Petani Kakao
 </div>
 
 <div class="menu">
 
-<a class="button laporan" href="#">
+<a class="button laporan" href="LINK_LAPORAN" target="_blank">
 📋 LAPORAN
 </a>
 
-<a class="button kalender" href="#">
+<a class="button kalender" href="LINK_KALENDER" target="_blank">
 📅 KALENDER PEMANGKASAN
 </a>
 
-<a class="button darurat" href="#">
+<a class="button tutorial" href="LINK_TUTORIAL" target="_blank">
+▶️ TUTORIAL PENGISIAN
+</a>
+
+<a class="button darurat" href="LINK_DARURAT" target="_blank">
 🚨 KONTAK DARURAT
 </a>
 
+<a class="button saran" href="LINK_SARAN" target="_blank">
+💡 SARAN & MASUKAN
+</a>
+
+</div>
+
+<div class="footer">
+Klinik Digital Kakao © 2026
 </div>
 
 </div>
